@@ -1,0 +1,14 @@
+package com.mini.quizgame.api.user;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.*;
+
+@Slf4j
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/api/v1/user")
+public class UserApiController {
+
+
+}
