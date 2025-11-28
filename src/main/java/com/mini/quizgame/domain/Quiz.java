@@ -12,8 +12,9 @@ import lombok.NoArgsConstructor;
 public class Quiz {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "quiz_id")
-    private Integer id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "room_id", referencedColumnName = "room_id", nullable = false)

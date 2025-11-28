@@ -14,8 +14,9 @@ import java.time.LocalDateTime;
 public class SubmittedAnswer {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "answer_id")
-    private Integer id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "quiz_id", referencedColumnName = "quiz_id", nullable = false)
