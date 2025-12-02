@@ -33,7 +33,7 @@ public class UserApiController {
      */
     @PostMapping("/join")
     public ResponseEntity<ApiResponse<?>> createUser(@RequestBody @Valid UserForm form) {
-        return ResponseEntity.ok(ApiResponse.success(createUserService.createUser(form), "회원가입 성공"));
+        return ResponseEntity.ok(ApiResponse.success(createUserService.createUser(form), "회원가입이 완료되었습니다."));
     }
 
     /**
